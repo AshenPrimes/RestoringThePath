@@ -13,6 +13,10 @@ h1 {
   background: limegreen;
 }
 
+.spacer {
+  display: block;
+}
+
 h2 {
   font-size: x-large;
 }
