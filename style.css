@@ -28,11 +28,15 @@ h3 {
 p {
   margin-bottom: 2em;
   font-size: 110%;
+  
+  text-align: justify;
 }
 
 .imageSet {
   display: flex;
   justify-content: space-evenly;
+  
+  flex-flow: row wrap;
 }
 
 img {
