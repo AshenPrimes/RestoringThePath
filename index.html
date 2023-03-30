@@ -7,7 +7,9 @@
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
 	<body>
-		<h1>Restoring the Path</h1>
+		<h1 id="header">Restoring the Path</h1>
+		
+		<div id="spacer"></div>
 		
 		<img class="render" alt="Image 1" src="images/Image1.jpg">
 		<img class="render" alt="Image 2" src="images/Image2.jpg">
@@ -73,7 +75,15 @@
 		<h2>So let us take hands and help restore the path for the future.</h2>
 		
 		<p>For more information you can contact:
-		<br>
-		Ulrich Swannepoel at <a href="tel:0738010087">073 801 0087</a></p>
+		<br>Ulrich Swannepoel at <a href="tel:0738010087">073 801 0087</a></p>
+		
+		<script>
+			let header = document.getElementById("header");
+			let headerInfo = header.getBoundingClientRect();
+			let height = headerInfo.bottom;
+			
+			let spacer = document.getElementById("spacer");
+			spacer.style.top = height;
+		</script>
 	</body>
 </html>
