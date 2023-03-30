@@ -45,7 +45,7 @@ img {
 }
 
 .render {
-  width: min(100vw, 800px);
+  width: min(100vw, 600px);
   height: auto;
   
   margin-left: auto;
