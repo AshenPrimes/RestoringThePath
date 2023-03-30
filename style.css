@@ -4,6 +4,13 @@ html * {
 
 h1 {
   font-size: xxx-large;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin-top: 0px;
+  text-align: center;
+  background: limegreen;
 }
 
 h2 {
