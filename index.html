@@ -5,6 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="favicon.ico">
+		
+		<script>
+			function addHeaderSpace() {
+				let header = document.getElementById("header");
+				let headerInfo = header.getBoundingClientRect();
+				let height = headerInfo.bottom;
+			
+				let spacer = document.getElementById("spacer");
+				spacer.style.height = height;
+			}
+		</script>
 	</head>
 	<body>
 		<h1 id="header">Restoring the Path</h1>
@@ -78,12 +89,14 @@
 		<br>Ulrich Swannepoel at <a href="tel:0738010087">073 801 0087</a></p>
 		
 		<script>
-			let header = document.getElementById("header");
-			let headerInfo = header.getBoundingClientRect();
-			let height = headerInfo.bottom;
+			document.addEventListener("DOMContentLoaded", function () {
+  				addHeaderSpace();
+			});
 			
-			let spacer = document.getElementById("spacer");
-			spacer.style.height = height;
+			window.addEventListener("resize", function () {
+				addHeaderSpace();
+			});
 		</script>
+
 	</body>
 </html>
