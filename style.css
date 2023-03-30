@@ -1,13 +1,18 @@
-html * {
-  font-size: 100%;
-}
-
 h1 {
   font-size: xxx-large;
 }
 
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
 p {
   margin-bottom: 2em;
+  font-size: 110%;
 }
 
 img {
@@ -23,8 +28,13 @@ img {
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 table, th, td {
   border: 1px solid;
+}
+
+th {
+  text-decoration: underline;
 }
